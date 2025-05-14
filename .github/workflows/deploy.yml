@@ -1,0 +1,33 @@
+name: Build and deploy Jekyll site
+
+on:
+  push:
+    branches:
+      - main  # اینجا می‌تونی نام branch خودت رو مشخص کنی
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '2.7'  # نسخه Ruby که برای Jekyll نیاز داری
+
+    - name: Install dependencies
+      run: |
+        gem install jekyll
+        bundle install
+
+    - name: Build the site
+      run: jekyll build
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
