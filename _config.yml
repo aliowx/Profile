@@ -23,6 +23,10 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
 
+gems:
+  - jekyll-feed
+
+
 markdown: kramdown
 kramdown:
   input: GFM

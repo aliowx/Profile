@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "'EEG prediction electrical activity '"
+title:        " EEG prediction electrical activity"
 author:       "Martin"
 header-style: text
 catalog:      true
