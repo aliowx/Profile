@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Neural Scroll Project: Predicting Brain Scrolls with Swin Transformer"
-date: 2025-05-22
+date: 2025-04-22
 categories: [Neuroscience, Deep Learning]
 tags: [brain-mapping, swin-transformer, neural-decoding, vision-transformer, PDF]
 image: /img/2.png
