@@ -9,9 +9,8 @@ categories: [Machine learning, Deep Learning]
 
 ## 📌 Project Overview
 
-This project involved building and evaluating machine learning models to predict:
-- **Steps Goal (`steps_goal`)**
-- **MVPA Minutes Goal (`mvpa_mins_goal`)**
+This project involved building and evaluating machine learning models to predict
+
 
 The full ML lifecycle was covered, including data preprocessing, modeling, evaluation, and explainability.
 
